@@ -13,7 +13,6 @@
   --color-turquoise-800: oklch(0.3818 0.0649 199.3);
   --color-turquoise-900: oklch(0.2442 0.0415 200.06);
 }
-
 ::-webkit-scrollbar {
   width: 20px;
 }
