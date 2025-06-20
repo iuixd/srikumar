@@ -1,14 +1,13 @@
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="flex justify-between items-center w-full py-4">
-        <ul className="flex space-x-6 color-turquoise-500">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#case-studies">Case Studies</a></li>
-          <li><a href="#github-portfolio">GitHub Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <nav className="fixed z-100 top-0 w-full">
+      <div className="flex justify-between justify-center self-auto items-center mt-2 mb-2">
+        <ul className="flex w-fit h-[auto] px-4 flex-shrink-0 rounded-[8px] border-[1px] border-[solid] border-[_rgba(255,_255,_255,_0.20)] border-opacity-90 bg-[linear-gradient(153deg,_rgba(255,_255,_255,_0.20)_0%,_rgba(255,_255,_255,_0.00)_100%)] backdrop-filter backdrop-blur-[21px]">
+          <li className="flex px-3 py-3"><a href="#hero">About</a></li>
+          <li className="flex px-3 py-3"><a href="#case-studies">Portfolio</a></li>
+          <li className="flex px-3 py-3"><a href="#github-portfolio">GitHub Projects</a></li>
+          <li className="flex px-3 py-3"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
