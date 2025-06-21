@@ -15,12 +15,16 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center relative transition-all duration-200 ease-in-out">
+    
 
-        <div className="justify-center self-auto items-center w-full min-h-screen mt-0 flex static bg-[linear-gradient(to_bottom,_rgba(0,_192,_199,_0.5),_rgba(0,_192,_199,_0.5))]">
+        <div className="justify-center self-auto items-center w-full min-h-screen mt-0 flex absolute bg-[linear-gradient(to_bottom,_rgba(0,_192,_199,_0.5),_rgba(0,_192,_199,_0.5))]">
           <video src={videoBg} autoPlay loop muted className="-z-10 object-cover bg-[50%] bg-cover w-full h-full m-auto absolute"></video>
 
-          <div className="text-white flex-col self-auto w-[1024px] py-60 h-auto flex static">
+          </div>
+          
+      <div className="flex flex-col items-center relative transition-all duration-200 ease-in-out">
+          <Navbar />
+          <div className="text-white flex flex-col self-auto w-[1024px] pt-60 h-auto static">
             <a href="#" className="mx-24 self-start relative z-100 transition-all duration-200 ease-in-out transition duration-600"
             x-bind:class="{'relative': !scrolledFromTop, 'sticky top-4': scrolledFromTop}" x-transition>
               <img src={myPhoto} className="w-24 h-24" 
@@ -51,13 +55,14 @@ function App() {
                 </svg>
               </a>
             </div>
-            <div className="my-40 w-full min-h-screen flex flex-col items-center justify-center bg-turquoise-300">
+            <div className="mt-40 w-full min-h-screen flex flex-col items-center justify-center bg-turquoise-400">
               Content
             </div>
-          </div>
+            <div className="w-full h-18 flex flex-col items-center justify-center text-turquoise-800 text-xs">
+              © 2025 srikumar.design
+            </div>
         </div>
 
-        <Navbar />
       </div>
     </>
   )
