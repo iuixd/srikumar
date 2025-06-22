@@ -43,13 +43,13 @@ function App() {
           <Navbar />
           <div className="text-white flex flex-col self-auto w-[1024px] pt-60 h-auto static">
             <a href="#" className="mx-24 self-start relative z-100 transition-all duration-200 ease-in-out transition duration-600"
-            x-bind:class="{'relative': !scrolledFromTop, 'sticky top-4': scrolledFromTop}" x-transition>
+            x-bind:class="{'relative': !scrolledFromTop, 'sticky top-3.5': scrolledFromTop}" x-transition>
               <img src={myPhoto} className="w-24 h-24" 
               x-bind:class="{'w-24 h-24': !scrolledFromTop, 'w-12 h-12': scrolledFromTop}"
               alt="Srikumar's Photo" x-transition/>
             </a>
             <div className="mx-24 w-[810px] font-bold font-bold text-[3.2em] leading-[1.1em] px-[0] py-4 [text-shadow:0_0_1px_#151c1cf0]">Product designer, design leader and amateur developer<span className="text-turquoise-500">.</span></div>
-            <div className="mx-24 w-[810px] text-[1.4em] px-[0] py-4 [text-shadow:0_0_1px_#151c1cf0]">I'm Srikumar, an experienced designer based in Bangalore, India. I am passionate about crafting user-centric and human-AI experiences, and I specialize in bringing bold ideas to life from concept to execution.</div>
+            <div className="mx-24 w-[810px] text-[1.1em] px-[0] py-4 [text-shadow:0_0_1px_#151c1cf0]">I'm Srikumar, an experienced designer based in Bangalore, India. I am passionate about crafting user-centric and human-AI experiences, and I specialize in bringing bold ideas to life from concept to execution.</div>
             <div class="mx-24 mt-6 flex gap-6">
               <a class="group -m-1 p-1" aria-label="Follow on X" href="#">
                 <svg viewBox="0 0 16 16" aria-hidden="true" className="h-5 w-5 fill-white group-hover:fill-turquoise-500 transition">
@@ -196,7 +196,7 @@ function App() {
               </div>
 
               
-              <div className="flex flex-col size-[45%] rounded-lg p-4 border border-[solid] border-turquoise-300 border-opacity-25">
+              <div className="flex flex-col size-[45%] rounded-lg p-6 border border-[solid] border-turquoise-300 border-opacity-25">
 
                 <div className="w-auto">
                   <h2 className="flex flex-row text-lg font-semibold leading-tight text-turquoise-900">
@@ -360,12 +360,14 @@ function App() {
                     </div>
                     <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[250px] align-text-bottom text-right">Aug 2005 to May 2006</div>
                   </div>
-
+                  
+                  <a className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-turquoise-200 font-medium text-turquoise-800  hover:text-turquoise-900 hover:bg-turquoise-100 group mt-6 w-full" href="#">Download CV<svg viewBox="0 0 16 16" fill="none" aria-hidden="true" className="h-4 w-4 stroke-turquoise-700 transition group-hover:stroke-turquoise-900"><path d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                  
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full h-18 flex flex-col items-center justify-center text-[14px] text-turquoise-800 opacity-[.68] font-medium">
+          <div className="w-full h-18 flex flex-col items-center justify-center text-[12px] text-turquoise-500 bg-turquoise-900 font">
             © 2025 srikumar.design
           </div>
         </div>
