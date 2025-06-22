@@ -12,6 +12,16 @@ import thumbnailDataPrivacy from './assets/thumbnailDataPrivacy.png';
 import thumbnailPetAdoption from './assets/thumbnailPetAdoption.png';
 import thumbnailZeroTrust from './assets/thumbnailZeroTrust.png';
 import thumbnailUnifiedDashboard from './assets/thumbnailUnifiedDashboard.png';
+import Consultant from './assets/Consultant.svg';
+import IBMLogo from './assets/IBMLogo.svg';
+import targetLogo from './assets/targetLogo.svg';
+import imLogo from './assets/imLogo.svg';
+import ctLogo from './assets/ctLogo.svg';
+import qhLogo from './assets/qhLogo.svg';
+import dbsLogo from './assets/dbsLogo.svg';
+import fireeyeLogo from './assets/fireeyeLogo.svg';
+import mcafeeLogo from './assets/mcafeeLogo.svg';
+import aztecLogo from './assets/aztecLogo.svg';
 import Alpine from 'alpinejs'
  
 window.Alpine = Alpine
@@ -26,6 +36,8 @@ function App() {
           <video src={videoBg} autoPlay loop muted className="-z-10 object-cover bg-[50%] bg-cover w-full h-full m-auto absolute"></video>
 
           </div>
+          <div className="fixed h-[74px] z-2 top-0 self-auto w-full bg-turquoise-500 opacity-0"
+                x-bind:class="{'bg-turquoise-500 opacity-0': !scrolledFromTop, 'bg-turquoise-500 opacity-50': scrolledFromTop}" x-transition></div>
           
       <div className="flex flex-col items-center relative transition-all duration-200 ease-in-out">
           <Navbar />
@@ -60,13 +72,13 @@ function App() {
                 </svg>
               </a>
             </div>
-          <div className="mt-40 w-full py-24 flex flex-col items-center justify-center bg-turquoise-400">
+          <div className="mt-20 w-full py-16 flex flex-col items-center justify-center bg-turquoise-400">
             <div className="mb-14">
               <img src={certBadges} className="w-2xl" alt="Srikumar's Certificates" />
             </div>
 
             <div className="flex flex-row w-full px-16">
-              <div className="flex flex-col size-[60%]">
+              <div className="flex flex-col size-[55%] mr-12">
 
                 <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
                     <div className="mr-8 relative flex flex-col items-center justify-center">
@@ -79,7 +91,6 @@ function App() {
                     </div>
                     <div className="w-350 opacity-90 group-hover:opacity-100 transition">
                       <h2 className="text-lg font-semibold leading-tight">Lumen AI Solutions</h2>
-                      <h3 className="text-[13px] font-medium text-turquoise-900 mt-1 leading-tight">Help simplifying document workflows with intuitive, AI-driven precision</h3>
                       <p className="text-turquoise-900 mt-3 text-[13px]">
                         Lumen AI simplifies document workflows with an intuitive interface powered by AI. Its features such as data extraction, validation and summarization help users process documents faster with accuracy and ease.
                       </p>
@@ -94,7 +105,6 @@ function App() {
                     </div>
                     <div className="w-350 opacity-90 group-hover:opacity-100 transition">
                       <h2 className="text-lg font-semibold leading-tight">Logo Design</h2>
-                      <h3 className="text-[13px] font-medium text-turquoise-900 mt-1 leading-tight"></h3>
                       <p className="text-turquoise-900 mt-3 text-[13px]">
                         Lumen AI, an enterprise-grade AI/ML data extraction tool, is represented through a modern logo symbolizing innovation, precision, and automation.
                       </p>
@@ -117,7 +127,6 @@ function App() {
                     </div>
                     <div className="w-350 opacity-90 group-hover:opacity-100 transition">
                       <h2 className="text-lg font-semibold leading-tight">Data security & privacy automation</h2>
-                      <h3 className="text-[13px] font-medium text-turquoise-900 mt-1 leading-tight">Empower organizations to manage & access their sensitive data securely.</h3>
                       <p className="text-turquoise-900 mt-3 text-[13px]">
                         Help a data privacy and protection team in getting full visibility into data privacy risks and providing full control on PII security and risk remediation.
                       </p>
@@ -137,7 +146,6 @@ function App() {
                     </div>
                     <div className="w-350 opacity-90 group-hover:opacity-100 transition">
                       <h2 className="text-lg font-semibold leading-tight">Zero-trust Network Security</h2>
-                      <h3 className="text-[13px] font-medium text-turquoise-900 mt-1 leading-tight">with micro-segmentation & workload protection</h3>
                       <p className="text-turquoise-900 mt-3 text-[13px]">
                         Redesign visibility of workload protection, applications flows with all network access to improve security monitoring and operational excellence.
                       </p>
@@ -177,7 +185,6 @@ function App() {
                     </div>
                     <div className="w-350 opacity-90 group-hover:opacity-100 transition">
                       <h2 className="text-lg font-semibold leading-tight">Pet Adoption App</h2>
-                      <h3 className="text-[13px] font-medium text-turquoise-900 mt-1 leading-tight">Help pet lovers to find a pet in India which matches their lifestyle</h3>
                       <p className="text-turquoise-900 mt-3 text-[13px]">
                         In India many pets are currently in shelters and pet-homes. Designed a mobile app that will help people looking for a new pet to connect with a right pet for them.
                       </p>
@@ -189,35 +196,174 @@ function App() {
               </div>
 
               
-              <div className="flex flex-col size-[40%]">
+              <div className="flex flex-col size-[45%] rounded-lg p-4 border border-[solid] border-turquoise-300 border-opacity-25">
 
-                <div className="rounded-lg overflow-hidden w-auto">
-                  <div className="p-4">
-                    <div className="flex items-center justify-center rounded-full bg-turquoise-300 w-10 h-10 text-xl font-semibold text-grey-900 ml-[30px] items-center">01</div>
-                    <h2 className="text-lg font-semibold text-turquoise-900 ml-[50px] pt-2 leading-tight">Empathize</h2>
-                    <h3 className="text-[13px] font-semibold text-turquoise-900 mt-1 ml-[50px] leading-tight">Discover the Problem Space</h3>
-                    <p className="text-turquoise-900 mt-2 text-[13px] ml-[50px] leading-tight rounded-lg bg-turquoise-300 p-2">
-                      Goal: Deeply understand the user's context, motivations, and pain points.
-                    </p>
+                <div className="w-auto">
+                  <h2 className="flex flex-row text-lg font-semibold leading-tight text-turquoise-900">
+                    <svg className="h-5 w-5 mr-2 fill-turquoise-800 group-hover:fill-turquoise-500 transition" viewBox="0 0 16 16">
+                      <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5" />
+                    </svg>
+                    Work
+                  </h2>
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={Consultant} className="w-8 h-8" alt="Independent Consultant Work" />
+                      </div>
+                      <div className="text-[12px] w-[180px]">
+                        <p className="font-semibold">Independent Consultant</p>
+                        <p className="text-turquoise-800">UX Design Consultant</p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[250px] align-text-bottom text-right">Oct 2024 to Present</div>
                   </div>
-                </div>
-
-
-                <div className="rounded-lg overflow-hidden w-auto">
-                  <div className="p-4">
-                    <div className="flex items-center justify-center rounded-full bg-turquoise-300 w-10 h-10 text-xl font-semibold text-grey-900 ml-[30px] items-center">01</div>
-                    <h2 className="text-lg font-semibold text-turquoise-900 ml-[50px] pt-2 leading-tight">Empathize</h2>
-                    <h3 className="text-[13px] font-semibold text-turquoise-900 mt-1 ml-[50px] leading-tight">Discover the Problem Space</h3>
-                    <p className="text-turquoise-900 mt-2 text-[13px] ml-[50px] leading-tight rounded-lg bg-turquoise-300 p-2">
-                      Goal: Deeply understand the user's context, motivations, and pain points.
-                    </p>
+                  
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={IBMLogo} className="w-8 h-8" alt="IBM Logo" />
+                      </div>
+                      <div className="text-[12px] w-[180px]">
+                        <p className="font-semibold">IBM India Pvt Ltd</p>
+                        <p className="text-turquoise-800">Senior Design Manager</p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[200px] align-text-bottom text-right">Apr 2024 to Oct 2024</div>
                   </div>
-                </div>
+                  
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={Consultant} className="w-8 h-8" alt="Independent Consultant Work" />
+                      </div>
+                      <div className="text-[12px] w-[180px]">
+                        <p className="font-semibold">Independent Consultant</p>
+                        <p className="text-turquoise-800">UX Design Consultant</p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[250px] align-text-bottom text-right">May 2023 to Mar 2024</div>
+                  </div>
+                  
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={targetLogo} className="w-8 h-7" alt="Target Logo" />
+                      </div>
+                      <div className="text-[12px] w-[180px]">
+                        <p className="font-semibold">Target Corp</p>
+                        <p className="text-turquoise-800">Senior UX Manager</p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[200px] align-text-bottom text-right">Aug 2022 to Apr 2023</div>
+                  </div>
+                  
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={imLogo} className="w-8 h-7" alt="Innominds Logo" />
+                      </div>
+                      <div className="text-[12px] w-[200px]">
+                        <p className="font-semibold">Innominds Software Pvt Ltd</p>
+                        <p className="text-turquoise-800">Senior UX Manager</p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[200px] align-text-bottom text-right">Sep 2021 to Jul 2022</div>
+                  </div>
+                  
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={Consultant} className="w-8 h-8" alt="Independent Consultant Work" />
+                      </div>
+                      <div className="text-[12px] w-[180px]">
+                        <p className="font-semibold">Stealth Startups</p>
+                        <p className="text-turquoise-800">UX Design Consultant</p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[250px] align-text-bottom text-right">Mar 2020 to Sep 2021</div>
+                  </div>
+                  
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={ctLogo} className="w-8 h-8" alt="ColorTokens Logo" />
+                      </div>
+                      <div className="text-[12px] w-[180px]">
+                        <p className="font-semibold">ColorTokens</p>
+                        <p className="text-turquoise-800">Senior UX Architect </p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[250px] align-text-bottom text-right">Mar 2018 to Mar 2020</div>
+                  </div>
+                  
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={qhLogo} className="w-8 h-8" alt="ColorTokens Logo" />
+                      </div>
+                      <div className="text-[12px] w-[180px]">
+                        <p className="font-semibold">Quick Heal Technologies</p>
+                        <p className="text-turquoise-800">Senior UX Manager</p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[250px] align-text-bottom text-right">Sep 2016 to Mar 2018</div>
+                  </div>
+                  
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={dbsLogo} className="w-8 h-8" alt="ColorTokens Logo" />
+                      </div>
+                      <div className="text-[12px] w-[180px]">
+                        <p className="font-semibold">DBS Bank Singapore</p>
+                        <p className="text-turquoise-800">UI UX Tech Lead Consultant</p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[250px] align-text-bottom text-right">Aug 2015 to Aug 2016</div>
+                  </div>
+                  
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={fireeyeLogo} className="w-8 h-8" alt="ColorTokens Logo" />
+                      </div>
+                      <div className="text-[12px] w-[180px]">
+                        <p className="font-semibold">FireEye</p>
+                        <p className="text-turquoise-800">UI UX Manager </p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[250px] align-text-bottom text-right">Jan 2015 to May 2015</div>
+                  </div>
+                  
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={mcafeeLogo} className="w-8 h-8" alt="ColorTokens Logo" />
+                      </div>
+                      <div className="text-[12px] w-[180px]">
+                        <p className="font-semibold">McAfee</p>
+                        <p className="text-turquoise-800">UI UX Manager </p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[250px] align-text-bottom text-right">May 2006 to Jan 2015</div>
+                  </div>
+                  
+                  <div className="flex flex-row m-auto mt-6 items-center align-middle">
+                    <div className="flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle">
+                      <div className="mr-2 items-center align-middle">
+                        <img src={aztecLogo} className="w-8 h-8" alt="ColorTokens Logo" />
+                      </div>
+                      <div className="text-[12px] w-[180px]">
+                        <p className="font-semibold">AZTEC Software</p>
+                        <p className="text-turquoise-800">Senior UI Specialist</p>
+                      </div>
+                    </div>
+                    <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[250px] align-text-bottom text-right">Aug 2005 to May 2006</div>
+                  </div>
 
+                </div>
               </div>
-
             </div>
-
           </div>
           <div className="w-full h-18 flex flex-col items-center justify-center text-[14px] text-turquoise-800 opacity-[.68] font-medium">
             © 2025 srikumar.design
