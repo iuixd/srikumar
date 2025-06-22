@@ -5,6 +5,13 @@ import GitHubPortfolio from "./components/GitHubPortfolio";
 import Contact from "./components/Contact";
 import videoBg from './assets/videoBg.mp4';
 import myPhoto from './assets/myPhoto.png';
+import certBadges from './assets/certBadges.png';
+import thumbnailLumenAI from './assets/thumbnailLumenAI.png';
+import LumenaiLogo from './assets/LumenaiLogo.gif';
+import thumbnailDataPrivacy from './assets/thumbnailDataPrivacy.png';
+import thumbnailPetAdoption from './assets/thumbnailPetAdoption.png';
+import thumbnailZeroTrust from './assets/thumbnailZeroTrust.png';
+import thumbnailUnifiedDashboard from './assets/thumbnailUnifiedDashboard.png';
 import Alpine from 'alpinejs'
  
 window.Alpine = Alpine
@@ -15,8 +22,6 @@ function App() {
 
   return (
     <>
-    
-
         <div className="justify-center self-auto items-center w-full min-h-screen mt-0 flex absolute bg-[linear-gradient(to_bottom,_rgba(0,_192,_199,_0.5),_rgba(0,_192,_199,_0.5))]">
           <video src={videoBg} autoPlay loop muted className="-z-10 object-cover bg-[50%] bg-cover w-full h-full m-auto absolute"></video>
 
@@ -55,14 +60,169 @@ function App() {
                 </svg>
               </a>
             </div>
-            <div className="mt-40 w-full min-h-screen flex flex-col items-center justify-center bg-turquoise-400">
-              Content
+          <div className="mt-40 w-full py-24 flex flex-col items-center justify-center bg-turquoise-400">
+            <div className="mb-14">
+              <img src={certBadges} className="w-2xl" alt="Srikumar's Certificates" />
             </div>
-            <div className="w-full h-18 flex flex-col items-center justify-center text-turquoise-800 text-xs">
-              © 2025 srikumar.design
-            </div>
-        </div>
 
+            <div className="flex flex-row w-full px-16">
+              <div className="flex flex-col size-[60%]">
+
+                <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
+                    <div className="mr-8 relative flex flex-col items-center justify-center">
+                      <div className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100 transition flex flex-col items-center justify-center cursor-pointer">
+                        <svg className="ml-1 h-12 w-12 fill-turquoise-900" viewBox="0 0 16 16">
+                          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                        </svg>
+                      </div>
+                      <img src={thumbnailLumenAI} className="w-4xl rounded-lg" alt="Thumbnail of Lumen AI Solutions" />
+                    </div>
+                    <div className="w-350 opacity-90 group-hover:opacity-100 transition">
+                      <h2 className="text-lg font-semibold leading-tight">Lumen AI Solutions</h2>
+                      <h3 className="text-[13px] font-medium text-turquoise-900 mt-1 leading-tight">Help simplifying document workflows with intuitive, AI-driven precision</h3>
+                      <p className="text-turquoise-900 mt-3 text-[13px]">
+                        Lumen AI simplifies document workflows with an intuitive interface powered by AI. Its features such as data extraction, validation and summarization help users process documents faster with accuracy and ease.
+                      </p>
+                      <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
+                      <p className="text-[13px]">User Research, Product Design, Design System</p>
+                    </div>
+                </div>
+
+                <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
+                    <div className="mr-8 relative flex flex-col items-center justify-center">
+                      <img src={LumenaiLogo} className="w-4xl rounded-lg" alt="Thumbnail of Lumen AI Solutions" />
+                    </div>
+                    <div className="w-350 opacity-90 group-hover:opacity-100 transition">
+                      <h2 className="text-lg font-semibold leading-tight">Logo Design</h2>
+                      <h3 className="text-[13px] font-medium text-turquoise-900 mt-1 leading-tight"></h3>
+                      <p className="text-turquoise-900 mt-3 text-[13px]">
+                        Lumen AI, an enterprise-grade AI/ML data extraction tool, is represented through a modern logo symbolizing innovation, precision, and automation.
+                      </p>
+                      <p className="text-turquoise-900 mt-3 text-[13px]">
+                        A radiant light motif reflects its power to illuminate insights from complex data, with gradient tones conveying depth and intelligence.
+                      </p>
+                      <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
+                      <p className="text-[13px]">Logo Design, Branding, Visual Communication, Animation, Design Collaboration</p>
+                    </div>
+                </div>
+
+                <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
+                    <div className="mr-8 relative flex flex-col items-center justify-center">
+                      <div className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100 transition flex flex-col items-center justify-center cursor-pointer">
+                        <svg className="ml-1 h-12 w-12 fill-turquoise-900" viewBox="0 0 16 16">
+                          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                        </svg>
+                      </div>
+                      <img src={thumbnailDataPrivacy} className="w-4xl rounded-lg" alt="Thumbnail of Data security & privacy automation" />
+                    </div>
+                    <div className="w-350 opacity-90 group-hover:opacity-100 transition">
+                      <h2 className="text-lg font-semibold leading-tight">Data security & privacy automation</h2>
+                      <h3 className="text-[13px] font-medium text-turquoise-900 mt-1 leading-tight">Empower organizations to manage & access their sensitive data securely.</h3>
+                      <p className="text-turquoise-900 mt-3 text-[13px]">
+                        Help a data privacy and protection team in getting full visibility into data privacy risks and providing full control on PII security and risk remediation.
+                      </p>
+                      <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
+                      <p className="text-[13px]">User Research, Product Design, Design System</p>
+                    </div>
+                </div>
+
+                <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
+                    <div className="mr-8 relative flex flex-col items-center justify-center">
+                      <div className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100 transition flex flex-col items-center justify-center cursor-pointer">
+                        <svg className="ml-1 h-12 w-12 fill-turquoise-900" viewBox="0 0 16 16">
+                          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                        </svg>
+                      </div>
+                      <img src={thumbnailZeroTrust} className="w-4xl rounded-lg" alt="Thumbnail of Data security & privacy automation" />
+                    </div>
+                    <div className="w-350 opacity-90 group-hover:opacity-100 transition">
+                      <h2 className="text-lg font-semibold leading-tight">Zero-trust Network Security</h2>
+                      <h3 className="text-[13px] font-medium text-turquoise-900 mt-1 leading-tight">with micro-segmentation & workload protection</h3>
+                      <p className="text-turquoise-900 mt-3 text-[13px]">
+                        Redesign visibility of workload protection, applications flows with all network access to improve security monitoring and operational excellence.
+                      </p>
+                      <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
+                      <p className="text-[13px]">Design Thinking, Product Strategy, UX/UI Design, Data Analysis, Led Design Team</p>
+                    </div>
+                </div>
+
+                <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
+                    <div className="mr-8 relative flex flex-col items-center justify-center">
+                      <div className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100 transition flex flex-col items-center justify-center cursor-pointer">
+                        <svg className="ml-1 h-12 w-12 fill-turquoise-900" viewBox="0 0 16 16">
+                          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                        </svg>
+                      </div>
+                      <img src={thumbnailUnifiedDashboard} className="w-4xl rounded-lg" alt="Thumbnail of Data security & privacy automation" />
+                    </div>
+                    <div className="w-350 opacity-90 group-hover:opacity-100 transition">
+                      <h2 className="text-lg font-semibold leading-tight">Unified Dashboard</h2>
+                      <h3 className="text-[13px] font-medium text-turquoise-900 mt-1 leading-tight">with actionable security insights</h3>
+                      <p className="text-turquoise-900 mt-3 text-[13px]">
+                        Designed dashboard to provide actionable security insights of the application groups, assets and network access for admin users to act-on.
+                      </p>
+                      <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
+                      <p className="text-[13px]">Design Thinking, Product Strategy, UX/UI Design, Data Analysis, Led Design Team</p>
+                    </div>
+                </div>
+
+                <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
+                    <div className="mr-8 relative flex flex-col items-center justify-center">
+                      <div className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100 transition flex flex-col items-center justify-center cursor-pointer">
+                        <svg className="ml-1 h-12 w-12 fill-turquoise-900" viewBox="0 0 16 16">
+                          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                        </svg>
+                      </div>
+                      <img src={thumbnailPetAdoption} className="w-4xl rounded-lg" alt="Thumbnail of Data security & privacy automation" />
+                    </div>
+                    <div className="w-350 opacity-90 group-hover:opacity-100 transition">
+                      <h2 className="text-lg font-semibold leading-tight">Pet Adoption App</h2>
+                      <h3 className="text-[13px] font-medium text-turquoise-900 mt-1 leading-tight">Help pet lovers to find a pet in India which matches their lifestyle</h3>
+                      <p className="text-turquoise-900 mt-3 text-[13px]">
+                        In India many pets are currently in shelters and pet-homes. Designed a mobile app that will help people looking for a new pet to connect with a right pet for them.
+                      </p>
+                      <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
+                      <p className="text-[13px]">Design Brief, Product Strategy, User Flow, UI/UX Design</p>
+                    </div>
+                </div>
+
+              </div>
+
+              
+              <div className="flex flex-col size-[40%]">
+
+                <div className="rounded-lg overflow-hidden w-auto">
+                  <div className="p-4">
+                    <div className="flex items-center justify-center rounded-full bg-turquoise-300 w-10 h-10 text-xl font-semibold text-grey-900 ml-[30px] items-center">01</div>
+                    <h2 className="text-lg font-semibold text-turquoise-900 ml-[50px] pt-2 leading-tight">Empathize</h2>
+                    <h3 className="text-[13px] font-semibold text-turquoise-900 mt-1 ml-[50px] leading-tight">Discover the Problem Space</h3>
+                    <p className="text-turquoise-900 mt-2 text-[13px] ml-[50px] leading-tight rounded-lg bg-turquoise-300 p-2">
+                      Goal: Deeply understand the user's context, motivations, and pain points.
+                    </p>
+                  </div>
+                </div>
+
+
+                <div className="rounded-lg overflow-hidden w-auto">
+                  <div className="p-4">
+                    <div className="flex items-center justify-center rounded-full bg-turquoise-300 w-10 h-10 text-xl font-semibold text-grey-900 ml-[30px] items-center">01</div>
+                    <h2 className="text-lg font-semibold text-turquoise-900 ml-[50px] pt-2 leading-tight">Empathize</h2>
+                    <h3 className="text-[13px] font-semibold text-turquoise-900 mt-1 ml-[50px] leading-tight">Discover the Problem Space</h3>
+                    <p className="text-turquoise-900 mt-2 text-[13px] ml-[50px] leading-tight rounded-lg bg-turquoise-300 p-2">
+                      Goal: Deeply understand the user's context, motivations, and pain points.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div className="w-full h-18 flex flex-col items-center justify-center text-[14px] text-turquoise-800 opacity-[.68] font-medium">
+            © 2025 srikumar.design
+          </div>
+        </div>
       </div>
     </>
   )

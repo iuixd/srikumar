@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Poppins", "sans-serif";
+  --font-poppins: Poppins, sans-serif;
   --color-turquoise-50: oklch(0.9685 0.02 200.65);
   --color-turquoise-100: oklch(0.9348 0.0394 200.42);
   --color-turquoise-200: oklch(0.8761 0.0758 198.98);
