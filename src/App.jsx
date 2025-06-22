@@ -361,7 +361,7 @@ function App() {
                     <div className="text-turquoise-800 mt-1 leading-tight text-[11px] w-[250px] align-text-bottom text-right">Aug 2005 to May 2006</div>
                   </div>
                   
-                  <a className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-turquoise-200 font-medium text-turquoise-800  hover:text-turquoise-900 hover:bg-turquoise-100 group mt-6 w-full" href="https://www.dropbox.com/scl/fi/nkq0e28tzyotnzwdglgpg/Srikumar-Krishnan-Kutty-Resume.docx?rlkey=ek3mdehpjyx2jyyj3lvjgzqyk&e=1&st=dadeqmjx&dl=0">Download CV<svg viewBox="0 0 16 16" fill="none" aria-hidden="true" className="h-4 w-4 stroke-turquoise-700 transition group-hover:stroke-turquoise-900"><path d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                  <a className="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-turquoise-200 font-medium text-turquoise-800  hover:text-turquoise-900 hover:bg-turquoise-100 group mt-6 w-full" href="https://www.dropbox.com/scl/fi/nkq0e28tzyotnzwdglgpg/Srikumar-Krishnan-Kutty-Resume.docx?rlkey=ek3mdehpjyx2jyyj3lvjgzqyk&e=1&st=dadeqmjx&dl=0" target="_blank">Download CV<svg viewBox="0 0 16 16" fill="none" aria-hidden="true" className="h-4 w-4 stroke-turquoise-700 transition group-hover:stroke-turquoise-900"><path d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
                   
                 </div>
               </div>
