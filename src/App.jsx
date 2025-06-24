@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-import UXCaseStudies from "./components/UXCaseStudies";
-import GitHubPortfolio from "./components/GitHubPortfolio";
+import GitHubPortfolio from "./components/GitHub";
 import Contact from "./components/Contact";
 import videoBg from './assets/videoBg.mp4';
 import myPhoto from './assets/myPhoto.png';
@@ -82,8 +81,8 @@ function App() {
 
                 <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
                     <div className="mr-8 relative flex flex-col items-center justify-center">
-                      <a href="https://www.youtube.com/watch?v=cMCYiHNBtq4" className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100 transition flex flex-col items-center justify-center cursor-pointer" target="_blank">
-                        <svg className="ml-1 h-12 w-12 fill-turquoise-900" viewBox="0 0 16 16">
+                      <a href="https://www.youtube.com/watch?v=cMCYiHNBtq4" className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100 hover:w-17 hover:h-17 transition flex flex-col items-center justify-center cursor-pointer" target="_blank">
+                        <svg className="ml-1 h-12 w-12 hover:w-13 hover:h-13 fill-turquoise-900" viewBox="0 0 16 16">
                           <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
                         </svg>
                       </a>
@@ -118,8 +117,8 @@ function App() {
 
                 <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
                     <div className="mr-8 relative flex flex-col items-center justify-center">
-                      <a href="https://www.youtube.com/watch?v=UwCw4N5_6SI" className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100 transition flex flex-col items-center justify-center cursor-pointer" target="_blank">
-                        <svg className="ml-1 h-12 w-12 fill-turquoise-900" viewBox="0 0 16 16">
+                      <a href="https://www.youtube.com/watch?v=UwCw4N5_6SI" className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100 hover:w-17 hover:h-17  transition flex flex-col items-center justify-center cursor-pointer" target="_blank">
+                        <svg className="ml-1 h-12 w-12 hover:w-13 hover:h-13 fill-turquoise-900" viewBox="0 0 16 16">
                           <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
                         </svg>
                       </a>
@@ -137,8 +136,8 @@ function App() {
 
                 <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
                     <div className="mr-8 relative flex flex-col items-center justify-center">
-                      <a href="https://www.youtube.com/watch?v=uW1a5iQ7u1Q&t=1s" className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100 transition flex flex-col items-center justify-center cursor-pointer" target="_blank">
-                        <svg className="ml-1 h-12 w-12 fill-turquoise-900" viewBox="0 0 16 16">
+                      <a href="https://www.youtube.com/watch?v=uW1a5iQ7u1Q&t=1s" className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100  hover:w-17 hover:h-17 transition flex flex-col items-center justify-center cursor-pointer" target="_blank">
+                        <svg className="ml-1 h-12 w-12 hover:w-13 hover:h-13 fill-turquoise-900" viewBox="0 0 16 16">
                           <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
                         </svg>
                       </a>
@@ -171,8 +170,8 @@ function App() {
 
                 <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
                     <div className="mr-8 relative flex flex-col items-center justify-center">
-                      <a href="https://www.youtube.com/watch?v=rYPZIdsFbAc&t=1s" className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100 transition flex flex-col items-center justify-center cursor-pointer" target="_blank">
-                        <svg className="ml-1 h-12 w-12 fill-turquoise-900" viewBox="0 0 16 16">
+                      <a href="https://www.youtube.com/watch?v=rYPZIdsFbAc&t=1s" className="absolute w-16 h-16 rounded-full bg-turquoise-300 opacity-50 hover:opacity-100  hover:w-17 hover:h-17 transition flex flex-col items-center justify-center cursor-pointer" target="_blank">
+                        <svg className="ml-1 h-12 w-12 hover:w-13 hover:h-13 fill-turquoise-900" viewBox="0 0 16 16">
                           <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
                         </svg>
                       </a>
