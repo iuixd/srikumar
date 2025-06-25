@@ -5,6 +5,8 @@ import Contact from "./components/Contact";
 import videoBg from './assets/videoBg.mp4';
 import myPhoto from './assets/myPhoto.png';
 import certBadges from './assets/certBadges.png';
+import thumbnailCBM from './assets/thumbnailCBM.png';
+import thumbnailWealthMgmt from './assets/thumbnailWealthMgmt.png';
 import thumbnailLumenAI from './assets/thumbnailLumenAI.png';
 import LumenaiLogo from './assets/LumenaiLogo.gif';
 import thumbnailDataPrivacy from './assets/thumbnailDataPrivacy.png';
@@ -60,12 +62,12 @@ function App() {
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
                 </svg>
               </a>
-              <a class="group -m-1 p-1" aria-label="Follow on GitHub" href="https://iuixd.github.io/srikumar-portfolio">
+              <a class="group -m-1 p-1" aria-label="Follow on GitHub" href="https://iuixd.github.io/srikumar-portfolio" target="_blank">
                 <svg viewBox="0 0 16 16" aria-hidden="true" className="h-5 w-5 fill-white group-hover:fill-turquoise-500 transition">
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
               </svg>
               </a>
-              <a class="group -m-1 p-1" aria-label="Follow on LinkedIn" href="https://www.linkedin.com/in/srikumarkk">
+              <a class="group -m-1 p-1" aria-label="Follow on LinkedIn" href="https://www.linkedin.com/in/srikumarkk" target="_blank">
                 <svg viewBox="0 0 16 16" aria-hidden="true" className="h-5 w-5 fill-white group-hover:fill-turquoise-500 transition">
                   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
                 </svg>
@@ -78,6 +80,57 @@ function App() {
 
             <div className="flex flex-row w-full px-16">
               <div className="flex flex-col size-[55%] mr-12">
+
+                <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
+                    <div className="mr-8 relative flex flex-col items-center justify-center">
+                      <img src={thumbnailCBM} className="w-4xl rounded-lg" alt="Thumbnail of RCM and CBM AI Solutions" />
+                    </div>
+                    <div className="w-350 opacity-90 group-hover:opacity-100 transition">
+                      <h2 className="text-lg font-semibold leading-tight">Automate and Optimize RCM with CBM Integration</h2>
+                      <p className="text-turquoise-900 mt-3 text-[13px]">
+                        Maximo IBM's platform for managing the lifecycle, performance and maintenance of critical assets in industries like maintenance, energy oil & gas, transportation and more.
+                      </p>
+                      <h3 className="text-turquoise-900 mt-3 text-[13px]">It includes tools for:</h3>
+
+                      <ul className="text-turquoise-900 mt-3 ml-4 text-[13px] list-disc">
+                        <li>Work and maintenance management</li>
+                        <li>Reliability (RCM) and condition-based monitoring (CBM)</li>
+                        <li>Inventory and Procurement</li>
+                        <li>Asset health insights and AI-driven predictions</li>
+                      </ul>
+
+                      <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
+                      <p className="text-[13px]">Design Team Management, Design Strategy, User Research, Product Design, Support Design System</p>
+                      <p className="text-[13px] py-4"><i>Design process available upon request</i></p>
+                    </div>
+                </div>
+
+                <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
+                    <div className="mr-8 relative flex flex-col items-center justify-center">
+                      <img src={thumbnailWealthMgmt} className="w-4xl rounded-lg" alt="Thumbnail of RCM and CBM AI Solutions" />
+                    </div>
+                    <div className="w-350 opacity-90 group-hover:opacity-100 transition">
+                      <h2 className="text-lg font-semibold leading-tight">Smart Wealth, Smarter Guidance</h2>
+                      <p className="text-turquoise-900 mt-3 text-[13px]">
+                        Users often find personal finance tools overwhelming, fragmented, and impersonal. They seek proactive, transparent, and easy-to-act-on insights to help them make smarter financial decisions with confidence.
+                      </p>
+                      <p className="text-turquoise-900 mt-3 text-[13px]">
+                        The goal is to support wealth customers in making smarter financial decisions by combining AI-driven insights with human advisor collaboration.
+                      </p>
+                      <h3 className="text-turquoise-900 mt-3 text-[13px]">Scope:</h3>
+
+                      <ul className="text-turquoise-900 mt-3 ml-4 text-[13px] list-disc">
+                        <li>AI Assistant integration</li>
+                        <li>Daily/weekly nudges</li>
+                        <li>Insight transparency & user feedback</li>
+                        <li>Actionable recommendations</li>
+                      </ul>
+
+                      <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
+                      <p className="text-[13px]">Design Strategy, User Research, Product Design, Design System</p>
+                      <p className="text-[13px] py-4"><i>Design process available upon request</i></p>
+                    </div>
+                </div>
 
                 <div className="group flex flex-row p-8 rounded-lg overflow-hidden w-full text-turquoise-900 transition-colors duration-500 ease-in-out hover:bg-turquoise-300 cursor-default">
                     <div className="mr-8 relative flex flex-col items-center justify-center">
@@ -95,6 +148,7 @@ function App() {
                       </p>
                       <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
                       <p className="text-[13px]">User Research, Product Design, Design System</p>
+                      <p className="text-[13px] py-4"><i>Design process available upon request</i></p>
                     </div>
                 </div>
 
@@ -112,6 +166,7 @@ function App() {
                       </p>
                       <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
                       <p className="text-[13px]">Logo Design, Branding, Visual Communication, Animation, Design Collaboration</p>
+                      <p className="text-[13px] py-4"><i>Design process available upon request</i></p>
                     </div>
                 </div>
 
@@ -131,6 +186,13 @@ function App() {
                       </p>
                       <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
                       <p className="text-[13px]">User Research, Product Design, Design System</p>
+                      <a href="https://www.dropbox.com/scl/fi/gy74x7sxabsu9ok8mlgkl/Case-Study-03-Automated-Data-Privacy-Platform.pdf?rlkey=c2vaet98myxpxrcg2vkines99&st=c60i4iy7&dl=0" className="flex flex-row text-[13px] py-4 items-center underline cursor-pointer transition hover:translate-x-1 hover:scale-102 hover:font-bold" target="_blank">
+                        Read more 
+                        <svg className="ml-2 h-3 w-3 font-semibold stroke-turquoise-800" viewBox="0 0 16 16">
+                          <path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
                     </div>
                 </div>
 
@@ -150,6 +212,13 @@ function App() {
                       </p>
                       <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
                       <p className="text-[13px]">Design Thinking, Product Strategy, UX/UI Design, Data Analysis, Led Design Team</p>
+                      <a href="https://www.dropbox.com/scl/fi/0f7q3ne3xyg5zzoobv6ee/Case-Study-04-ColorToken-XShield-and-Visualizer.pdf?rlkey=ek6nq2viunabuprid6l18qqcg&st=f9dvkire&dl=0" className="flex flex-row text-[13px] py-4 items-center underline cursor-pointer transition hover:translate-x-1 hover:scale-102 hover:font-bold" target="_blank">
+                        Read more 
+                        <svg className="ml-2 h-3 w-3 font-semibold stroke-turquoise-800" viewBox="0 0 16 16">
+                          <path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
                     </div>
                 </div>
 
@@ -184,6 +253,13 @@ function App() {
                       </p>
                       <h4 className="text-[13px] mt-3 font-medium">Responsibilities</h4>
                       <p className="text-[13px]">Design Brief, Product Strategy, User Flow, UI/UX Design</p>
+                      <a href="https://www.dropbox.com/scl/fi/cvwbwioxa0r199o4v8am1/Case-Study-05-TakeMeHome-App.pdf?rlkey=idaqm9rsxkbhsnipzq2m7uthd&st=fbrd5dj4&dl=0" className="flex flex-row text-[13px] py-4 items-center underline cursor-pointer transition hover:translate-x-1 hover:scale-102 hover:font-bold" target="_blank">
+                        Read more 
+                        <svg className="ml-2 h-3 w-3 font-semibold stroke-turquoise-800" viewBox="0 0 16 16">
+                          <path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
                     </div>
                 </div>
 
