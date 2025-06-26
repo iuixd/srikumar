@@ -9,7 +9,7 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/srikumar-portfolio'
+  base: '/srikumar'
 })
 
 
