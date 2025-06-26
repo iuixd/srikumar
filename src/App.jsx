@@ -14,7 +14,7 @@ window.Alpine = Alpine
  
 Alpine.start()
 
-const router = createBrowserRouter([
+/*const router = createBrowserRouter([
   {
     path : "/srikumar-portfolio",
     element: <Home />,
@@ -38,6 +38,10 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>
-);
+);*/
+function App() {
+
+  return <div><Home /></div>
+}
 
 export default App
