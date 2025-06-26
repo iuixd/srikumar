@@ -21,6 +21,11 @@ import dbsLogo from '../assets/dbsLogo.svg';
 import fireeyeLogo from '../assets/fireeyeLogo.svg';
 import mcafeeLogo from '../assets/mcafeeLogo.svg';
 import aztecLogo from '../assets/aztecLogo.svg';
+import Alpine from 'alpinejs'
+ 
+window.Alpine = Alpine;
+ 
+Alpine.start();
 
 function Home() {
     return (

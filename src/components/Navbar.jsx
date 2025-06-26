@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [position, setPosition] = React.useState({
@@ -33,7 +32,7 @@ const Navbar = () => {
                   left: "16px",
                 });
               }}
-              setPosition={setPosition} className="relative z-100 mr-3 px-3 py-4 text-sm font-medium text-turquoise-900 cursor-pointer"><Link to="/srikumar-portfolio/about">About</Link></li>
+              setPosition={setPosition} className="relative z-100 mr-3 px-3 py-4 text-sm font-medium text-turquoise-900 cursor-pointer"><a href="#hero">About</a></li>
           <li ref={ref} 
               onMouseEnter={() => {
                 setPosition({
@@ -41,7 +40,7 @@ const Navbar = () => {
                   opacity: 0.40,
                   left: "95px",
                 });
-              }} setPosition={setPosition} className="relative z-100 mr-3 px-3 py-4 text-sm font-medium text-turquoise-900 cursor-pointer"><Link href="#hero">Articles</Link></li>
+              }} setPosition={setPosition} className="relative z-100 mr-3 px-3 py-4 text-sm font-medium text-turquoise-900 cursor-pointer"><a href="#hero">Articles</a></li>
           <li ref={ref}
               onMouseEnter={() => {
                 setPosition({
@@ -49,7 +48,7 @@ const Navbar = () => {
                   opacity: 0.40,
                   left: "183px",
                 });
-              }} setPosition={setPosition} className="relative z-100 mr-3 px-3 py-4 text-sm font-medium text-turquoise-900 cursor-pointer"><Link href="#github-portfolio">GitHub</Link></li>
+              }} setPosition={setPosition} className="relative z-100 mr-3 px-3 py-4 text-sm font-medium text-turquoise-900 cursor-pointer"><a href="#github-portfolio">GitHub</a></li>
           <li ref={ref}
               onMouseEnter={() => {
                 setPosition({
@@ -57,7 +56,7 @@ const Navbar = () => {
                   opacity: 0.40,
                   left: "267px",
                 });
-              }} setPosition={setPosition} className="relative z-100 px-3 py-4 text-sm font-medium text-turquoise=900 cursor-pointer"><Link href="#contact">Contact</Link></li>
+              }} setPosition={setPosition} className="relative z-100 px-3 py-4 text-sm font-medium text-turquoise=900 cursor-pointer"><a href="#contact">Contact</a></li>
           <Cursor position={position} />
         </ul>
       </div>
@@ -71,4 +70,5 @@ const Cursor = ({position}) => {
     className="absolute z-99 h-7 w-36 mx-auto rounded-full bg-white"
   />
 }
+
 export default Navbar

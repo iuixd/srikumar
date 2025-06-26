@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; 
 import Home from "./components/Home";
 import About from "./components/About";
-import GitHubPortfolio from "./components/GitHub";
+import GitHub from "./components/GitHub";
 import Contact from "./components/Contact";
 import Alpine from 'alpinejs'
 import NotFound from "./components/NotFound";
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
   },
   {
     path : "/srikumar-portfolio/github",
-    element: <GitHubPortfolio />,
+    element: <GitHub />,
   },
   {
     path : "/srikumar-portfolio/contact",

@@ -1,9 +1,9 @@
 
 
-const GitHubPortfolio = () => {
+const GitHub = () => {
   return (
     <div>GitHub Portfolio</div>
   )
 }
 
-export default GitHubPortfolio
+export default GitHub
