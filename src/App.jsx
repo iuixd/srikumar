@@ -14,22 +14,22 @@ window.Alpine = Alpine
  
 Alpine.start()
 
-/*const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
-    path : "/srikumar-portfolio",
+    path : "/srikumar",
     element: <Home />,
     errorElement: <NotFound />,
   },
   {
-    path : "/srikumar-portfolio/about",
+    path : "/srikumar/about",
     element: <About />,
   },
   {
-    path : "/srikumar-portfolio/github",
+    path : "/srikumar/github",
     element: <GitHub />,
   },
   {
-    path : "/srikumar-portfolio/contact",
+    path : "/srikumar/contact",
     element: <Contact />,
   }
 ]);
@@ -38,10 +38,12 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>
-);*/
+);
+
 function App() {
 
   return <div><Home /></div>
+
 }
 
 export default App
