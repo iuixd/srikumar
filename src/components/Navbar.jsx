@@ -25,7 +25,6 @@ const Navbar = () => {
                 x-bind:class="{'bg-[linear-gradient(153deg,_rgba(255,_255,_255,_0.40)_0%,_rgba(255,_255,_255,_0.00)_100%)]': !scrolledFromTop, 'bg-[linear-gradient(153deg,_rgba(255,_255,_255,_0.80)_0%,_rgba(255,_255,_255,_0.00)_100%)]': scrolledFromTop}" x-transition>
           <li ref={ref} 
               onMouseEnter={() => {
-
                 setPosition({
                   width: "67px",
                   opacity: 0.40,
