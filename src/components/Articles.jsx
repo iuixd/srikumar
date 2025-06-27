@@ -6,7 +6,7 @@ import myPhoto from '../assets/myPhoto.png';
 import thumbnailCBM from '../assets/thumbnailCBM.png';
 import Consultant from '../assets/Consultant.svg';
 
-const Contact = () => {
+const Articles = () => {
 
   return (
     <>
@@ -25,4 +25,4 @@ const Contact = () => {
   );
 }
 
-export default Contact
+export default Articles

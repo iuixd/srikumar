@@ -1,73 +1,145 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef, useState } from 'react';
+import { motion, useMotionValue, useSpring } from 'framer-motion';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-  const [position, setPosition] = React.useState({
-    left: 0,
-    width: 0,
-    opacity: 0,
-  });
+  const location = useLocation();
+  const navRef = useRef(null);
+  const itemRefs = useRef({});
 
-  const ref = React.useRef(null);
+  const left = useMotionValue(0);
+  const width = useMotionValue(0);
+  const opacity = useMotionValue(0);
+
+  const springLeft = useSpring(left, { stiffness: 400, damping: 30 });
+  const springWidth = useSpring(width, { stiffness: 400, damping: 30 });
+  const springOpacity = useSpring(opacity, { stiffness: 400, damping: 30 });
+
+  const navItems = [
+    { label: 'About', path: '/srikumar/about' },
+    { label: 'Articles', path: '/srikumar/articles' },
+    { label: 'GitHub', path: '/srikumar/github' },
+    { label: 'Contact', path: '/srikumar/contact' },
+  ];
+
+  const calculatePosition = (el) => {
+    if (!el || !navRef.current) return { left: 0, width: 0, opacity: 0 };
+    const rect = el.getBoundingClientRect();
+    const parentRect = navRef.current.getBoundingClientRect();
+    return {
+      left: rect.left - parentRect.left,
+      width: rect.width,
+      opacity: 0.4,
+    };
+  };
+
+  useEffect(() => {
+    const activeItem = navItems.find((item) => location.pathname === item.path);
+    if (activeItem) {
+      const el = itemRefs.current[activeItem.path];
+      if (el) {
+        const pos = calculatePosition(el);
+        requestAnimationFrame(() => {
+          left.set(pos.left);
+          width.set(pos.width);
+          opacity.set(pos.opacity);
+        });
+      }
+    }
+  }, [location.pathname]);
+
+  const handleMouseEnter = (e) => {
+    const pos = calculatePosition(e.target);
+    left.set(pos.left);
+    width.set(pos.width);
+    opacity.set(pos.opacity);
+  };
+
+  const handleMouseLeave = () => {
+    const activeItem = navItems.find((item) => location.pathname === item.path);
+    if (activeItem) {
+      const el = itemRefs.current[activeItem.path];
+      if (el) {
+        const pos = calculatePosition(el);
+        left.set(pos.left);
+        width.set(pos.width);
+        opacity.set(pos.opacity);
+      } else {
+        opacity.set(0);
+      }
+    } else {
+      opacity.set(0);
+    }
+  };
 
   return (
-    <nav className="fixed z-100 top-0 self-auto w-full">
-      <div className="flex justify-between justify-center self-auto items-center mt-2 mb-2">
+    <nav
+      className="fixed z-100 top-0 w-full"
+      role="navigation"
+      aria-label="Main navigation"
+      aria-labelledby="main-navigation-label"
+    >
+      <h2 id="main-navigation-label" className="sr-only">
+        Primary navigation
+      </h2>
+      <div className="flex justify-center items-center mt-2 mb-2">
         <ul
-          onMouseLeave={() => {
-            setPosition((pv) => ({
-              ...pv,
-              opacity: 0,
-            }));
-          }}
+          ref={navRef}
+          onMouseLeave={handleMouseLeave}
+          role="menubar"
+          className="relative flex items-center px-4 rounded-[8px] font-medium border border-[rgba(255,255,255,0.20)] bg-[linear-gradient(153deg,_rgba(255,_255,_255,_0.20)_0%,_rgba(255,_255,_255,_0.00)_100%)] backdrop-filter backdrop-blur-[21px]"
+            x-bind:class="{'bg-[linear-gradient(153deg,_rgba(255,_255,_255,_0.10)_0%,_rgba(255,_255,_255,_0.00)_100%)]': !scrolledFromTop, 'bg-[linear-gradient(153deg,_rgba(255,_255,_255,_0.50)_0%,_rgba(255,_255,_255,_0.00)_100%)]': scrolledFromTop}" x-transition
+        >
+          {navItems.map((item) => (
+            <li
+              key={item.path}
+              ref={(el) => (itemRefs.current[item.path] = el)}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="relative z-100 mr-3 px-3 py-4 text-sm font-normal cursor-pointer transition-all duration-300"
+            >
+              <Link
+                to={item.path}
+                role="menuitem"
+                tabIndex={0}
+                onFocus={() => {
+                  const el = itemRefs.current[item.path];
+                  if (el) {
+                    const pos = calculatePosition(el);
+                    left.set(pos.left);
+                    width.set(pos.width);
+                    opacity.set(pos.opacity);
+                  }
+                }}
+                className={`focus:outline-none focus:ring-2 focus:ring-white rounded ${
+                  location.pathname === item.path
+                    ? "text-turquoise-900 font-semibold scale-105"
+                    : "text-turquoise-900 hover:text-turquoise-900"
+                }`}
+                aria-current={
+                  location.pathname === item.path ? "page" : undefined
+                }
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
 
-          className="realtive flex items-center w-fit h-[auto] px-4 flex-shrink-0 rounded-[8px] font-medium border-[1px] border-[solid] border-[_rgba(255,_255,_255,_0.20)] border-opacity-90 bg-[linear-gradient(153deg,_rgba(255,_255,_255,_0.40)_0%,_rgba(255,_255,_255,_0.00)_100%)] backdrop-filter backdrop-blur-[21px]"
-                x-bind:class="{'bg-[linear-gradient(153deg,_rgba(255,_255,_255,_0.40)_0%,_rgba(255,_255,_255,_0.00)_100%)]': !scrolledFromTop, 'bg-[linear-gradient(153deg,_rgba(255,_255,_255,_0.80)_0%,_rgba(255,_255,_255,_0.00)_100%)]': scrolledFromTop}" x-transition>
-          <li ref={ref} 
-              onMouseEnter={() => {
-                setPosition({
-                  width: "67px",
-                  opacity: 0.40,
-                  left: "16px",
-                });
-              }}
-              setPosition={setPosition} className="relative z-100 mr-3 px-3 py-4 text-sm font-medium text-turquoise-900 cursor-pointer"><a href="#hero">About</a></li>
-          <li ref={ref} 
-              onMouseEnter={() => {
-                setPosition({
-                  width: "77px",
-                  opacity: 0.40,
-                  left: "95px",
-                });
-              }} setPosition={setPosition} className="relative z-100 mr-3 px-3 py-4 text-sm font-medium text-turquoise-900 cursor-pointer"><a href="#hero">Articles</a></li>
-          <li ref={ref}
-              onMouseEnter={() => {
-                setPosition({
-                  width: "72px",
-                  opacity: 0.40,
-                  left: "183px",
-                });
-              }} setPosition={setPosition} className="relative z-100 mr-3 px-3 py-4 text-sm font-medium text-turquoise-900 cursor-pointer"><a href="#github-portfolio">GitHub</a></li>
-          <li ref={ref}
-              onMouseEnter={() => {
-                setPosition({
-                  width: "81px",
-                  opacity: 0.40,
-                  left: "267px",
-                });
-              }} setPosition={setPosition} className="relative z-100 px-3 py-4 text-sm font-medium text-turquoise=900 cursor-pointer"><a href="#contact">Contact</a></li>
-          <Cursor position={position} />
+          <motion.li
+            style={{
+              left: springLeft,
+              width: springWidth,
+              opacity: springOpacity,
+              top: "12px",
+            }}
+            className="absolute z-50 h-7 rounded-full bg-white shadow-lg"
+            layout
+            transition={{ type: "spring", stiffness: 400, damping: 30 }}
+          />
         </ul>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-const Cursor = ({position}) => {
-  return <motion.li
-    animate={position} 
-    className="absolute z-99 h-7 w-36 mx-auto rounded-full bg-white"
-  />
-}
-
-export default Navbar
+export default Navbar;
