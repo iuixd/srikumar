@@ -5,11 +5,7 @@ import Articles from "./components/Articles";
 import GitHub from "./components/GitHub";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
-import Navbar from "./components/Navbar"; // Import your navbar
-import Alpine from "alpinejs";
-
-window.Alpine = Alpine;
-Alpine.start();
+import Navbar from "./components/Navbar"; 
 
 // Define layout with navbar
 const Layout = () => (
@@ -30,19 +26,19 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "about",
+        path: "/srikumar/about",
         element: <About />,
       },
       {
-        path: "articles",
+        path: "/srikumar/articles",
         element: <Articles />,
       },
       {
-        path: "github",
+        path: "/srikumar/github",
         element: <GitHub />,
       },
       {
-        path: "contact",
+        path: "/srikumar/contact",
         element: <Contact />,
       },
     ],
