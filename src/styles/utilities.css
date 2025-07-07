@@ -4,26 +4,58 @@
   @apply -m-1 p-3 rounded-[100px] border-1 border-white-40 hover:bg-turquoise-50 transition;
 }
 
+.body-wrapper {
+  @apply flex flex-col items-center relative transition-all duration-200 ease-in-out;
+}
+
+.body-container {
+  @apply text-white flex flex-col self-auto w-[1200px] pt-40 h-auto static;
+}
+
+.cert-wrapper {
+  @apply mb-14;
+}
+
+.project-work-wrapper {
+  @apply flex flex-row w-full px-8;
+}
+
+.container {
+  @apply mt-20 w-full py-16 flex flex-col items-center justify-center bg-turquoise-400;
+}
+
+.hero-heading {
+    @apply mx-24 w-[680px] font-bold text-[3.2em] leading-[1.1em] px-[0] py-4 [text-shadow:0_0_1px_#151c1cf0];
+}
+
+.hero-paragraph {
+    @apply mx-24 w-[720px] text-[1.1em] px-[0] py-4 [text-shadow:0_0_1px_#151c1cf0];
+}
+
 .download-btn {
     @apply inline-flex mt-6 w-full items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none font-medium bg-white-20  text-turquoise-700 hover:text-turquoise-900 hover:bg-white hover:bg-turquoise-50 transition;
 }
 
 .work-section {
-    @apply flex flex-col size-[45%] rounded-lg p-6 border-1 border-white-40
+    @apply flex flex-col size-[45%] rounded-lg p-6 border-1 border-white-40;
 }
 
 .work-header {
-    @apply flex flex-row text-lg font-semibold leading-tight text-turquoise-900
+    @apply flex flex-row text-lg font-semibold leading-tight text-turquoise-900;
 }
 
 .work-wrapper {
-    @apply flex flex-row m-auto mt-6 items-center align-middle
+    @apply flex flex-row m-auto mt-6 items-center align-middle;
 }
 
 .work-item {
-    @apply flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle
+    @apply flex flex-row text-turquoise-900 text-[13px] font-medium m-auto mr-4 items-center align-middle;
 }
 
 .work-duration {
-    @apply text-turquoise-800 mt-1 leading-tight text-[11px] w-[134px] align-text-bottom text-right
+    @apply text-turquoise-800 mt-1 leading-tight text-[11px] w-[134px] align-text-bottom text-right;
+}
+
+.footer {
+    @apply w-full h-18 flex flex-col items-center justify-center text-[12px] text-turquoise-500 bg-turquoise-900;
 }
