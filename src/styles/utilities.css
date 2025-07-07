@@ -1,7 +1,7 @@
 @tailwind components;
 
 .btn-social {
-  @apply -m-1 p-3 rounded-[100px] border-1 border-turquoise-50 hover:bg-turquoise-50 transition;
+  @apply -m-1 p-3 rounded-[100px] border-1 border-white-40 hover:bg-turquoise-50 transition;
 }
 
 .download-btn {
