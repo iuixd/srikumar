@@ -271,6 +271,7 @@ const ProjectCard = () => {
         ) => {
           const showVideoLink = youtubeLink && youtubeLink !== null;
           const showCaseStudy = casestudyLink && casestudyLink !== null;
+          const isLumenLogo = "LumenaiLogo";
 
           return (
             <div
@@ -296,7 +297,7 @@ const ProjectCard = () => {
 
                 <img
                   src={thumbnailMap[thumbnail]}
-                  className="w-200 rounded-lg"
+                  className={isLumenLogo === "LumenaiLogo" ? "w-150 rounded-lg" : "w-200 rounded-lg"}  
                   alt={`Thumbnail of ${titleText}`}
                 />
               </div>
