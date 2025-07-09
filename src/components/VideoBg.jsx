@@ -4,14 +4,14 @@ import videoBg from '../assets/videoBg.mp4';
 const VideoBg = () => {
   return (
     <>
-      <div className="justify-center self-auto items-center w-full min-h-screen mt-0 flex absolute bg-[linear-gradient(to_bottom,_rgba(0,_192,_199,_0.5),_rgba(0,_192,_199,_0.5))]">
+      <div className="block sm:block min-[360px]:hidden justify-center self-auto items-center w-full min-h-screen mt-0 flex absolute bg-[linear-gradient(to_bottom,_rgba(0,_192,_199,_0.5),_rgba(0,_192,_199,_0.5))]">
         <video
           src={videoBg}
           autoPlay
           loop
           muted
           className="
-            min-[360px]:invisible sm:visible -z-10 object-cover bg-[50%] bg-cover w-full h-full m-auto absolute"
+            block sm:block min-[360px]:hidden -z-10 object-cover bg-[50%] bg-cover w-full h-full m-auto absolute"
         ></video>
       </div>
       <div
