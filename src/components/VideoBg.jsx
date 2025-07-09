@@ -8,7 +8,7 @@ const VideoBg = () => {
     
     <>
       {isMobile ? (
-        <div className=" justify-center self-auto items-center w-full min-h-screen mt-0 flex absolute bg-[linear-gradient(to_bottom,_rgba(0,_192,_199,_0.5),_rgba(0,_192,_199,_0.5))]">
+        <div className=" justify-center self-auto items-center w-full min-h-screen mt-0 flex absolute">
       </div>
       ) : (
         <div className="justify-center self-auto items-center w-full min-h-screen mt-0 flex absolute bg-[linear-gradient(to_bottom,_rgba(0,_192,_199,_0.5),_rgba(0,_192,_199,_0.5))]">
