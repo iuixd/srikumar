@@ -6,21 +6,21 @@ import myPhoto from "../assets/myPhoto.png";
 import thumbnailCBM from "../assets/thumbnailCBM.png";
 import Consultant from "../assets/Consultant.svg";
 
-const About = () => {
+const GitHub = () => {
   return (
     <>
       <div
-        data-page-name="about"
+        data-page-name="github"
         x-data="{ pageName: $root.dataset.pageName }"
         x-init="$store.page.name = pageName"
         className="fixed h-[74px] z-2 top-0 self-auto w-full bg-turquoise-500 opacity-0 border-1"
       ></div>
 
       <div className="relative flex flex-col items-center">
-        <div className="static flex flex-col self-auto min-[360px]:w-full md:w-[1024px] h-auto text-white ">
+        <div className="static flex flex-col self-auto min-[360px]:w-full md:w-full lg:w-[1024px] h-auto text-white ">
           <Link
-            to="/srikumar"
-            className="min-[360px]:mx-[10%] md:mx-0 mt-[12px] self-start relative z-101"
+            to="/"
+            className="min-[360px]:ml-[46px] sm:ml-[90px] md:ml-[6px] mt-[12px] self-start relative z-101"
           >
             <img
               src={myPhoto}
@@ -35,7 +35,7 @@ const About = () => {
       <div className="body-wrapper h-full">
         <div className="subpage-body-container">
           <div className="sub-content-wrapper h-full transition-all duration-300 ease-in-out">
-            <Link to="/srikumar" className="group sub-backhome-link">
+            <Link to="/" className="group sub-backhome-link">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -62,4 +62,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default GitHub;
