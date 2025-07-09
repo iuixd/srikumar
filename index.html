@@ -19,12 +19,18 @@
       gtag('config', 'G-GPVJWRX4BW');
     </script>
     
-    <script type="module" crossorigin src="/srikumar/assets/index-B9xZG-gU.js"></script>
-    <link rel="stylesheet" crossorigin href="/srikumar/assets/index-Cb5Uq0XG.css">
+    <script type="module" crossorigin src="/srikumar/assets/index-BtxWhnwZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/srikumar/assets/index-C67LfNiK.css">
   </head>
-  <body class="font-poppins bg-turquoise-200"
-    x-data="{navbarOpen: false, scrolledFromTop: false}"
-    x-init="window.scrollY > 180 ? scrolledFromTop = true : scrolledFromTop = false"
+  <body class="font-poppins min-[360px]:bg-turquoise-500 md:bg-turquoise-200" 
+    x-data="{
+      navbarOpen: false,
+      scrolledFromTop: false
+    }"
+    x-init="
+      $store.page = { name: '' };
+      scrolledFromTop = window.scrollY > 180;
+    "
     @scroll.window="window.scrollY > 180 ? scrolledFromTop = true : scrolledFromTop = false"
   >
 
