@@ -1,13 +1,13 @@
 import React from "react";
 import videoBg from '../assets/videoBg.mp4';
-import useIsMobile from "./useIsMobile";
+import useShouldHideVideo from "./useShouldHideVideo";
 
 const VideoBg = () => {
-    const isMobile = useIsMobile();
+    const shouldHideVideo = useShouldHideVideo();
   return (
     
     <>
-      {isMobile ? (
+      {shouldHideVideo ? (
         <div className=" justify-center self-auto items-center w-full min-h-screen mt-0 flex absolute">
       </div>
       ) : (
