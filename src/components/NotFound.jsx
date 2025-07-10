@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import myPhoto from "../assets/myPhoto.png";
 
 const NotFound = () => {
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1); // Navigates one step back in history
+  };
+
   return (
     <>
       <div class="flex h-screen items-center justify-center text-turquoise-900">
@@ -12,7 +19,14 @@ const NotFound = () => {
           <p className="mt-2 text-9xl">404</p>
 
           <div className="group sub-content-wrapper h-full items-center justify-center transition-all duration-300 ease-in-out">
-            <Link to="/srikumar" className="group flex w-fit h-12 px-4 text-xs font-medium group-hover:font-semibold items-center justify-center text-turquoise-600 group-hover:text-turquoise-900 bg-turquoise-100/40  group-hover:bg-turquoise-100/60 rounded-full transition-colors duration-150 ease-in-out cursor-pointer">
+            <Link
+              to="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.history.back();
+              }}
+              className="group flex w-fit h-12 px-4 text-xs font-medium group-hover:font-semibold items-center justify-center text-turquoise-600 group-hover:text-turquoise-900 bg-turquoise-100/40  group-hover:bg-turquoise-100/60 rounded-full transition-colors duration-150 ease-in-out cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
